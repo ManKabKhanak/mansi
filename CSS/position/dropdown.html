@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    button{
+        margin: 100px;
+        padding: 15px 20px;
+        border: none;
+        background-color: slateblue;
+        position: relative;
+       
+
+    }
+     ul{
+        list-style: none;
+        width: 100%;
+        background-color: salmon;
+        position: absolute;
+        top:  100%;
+        left: 100%;
+        display: none;
+       
+        }
+    ul li {
+        padding: 6px 10px;
+    }
+    button:hover{
+        background-color: blue; 
+        }
+    button:focus {
+        background-color: palevioletred;
+      }
+    button:focus ul{
+        display: block;
+
+    }
+    
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+    <button>
+        Products <i class="fa-brands fa-instagram"></i>
+        <ul>
+          <li>product 1</li>
+          <li>product 2</li>
+          <li>product 3</li>
+          <li>product 4</li>
+        </ul>
+      </button>  
+</body>
+</html>
