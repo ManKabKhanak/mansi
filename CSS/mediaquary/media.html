@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        media query 
+        responsive design
+     -->
+
+    <!-- 
+        < 576px mobile
+        > 576px small screen tablet
+        > 768px medium laptop 
+        > 992px large laptop
+        > 1200px extra large laptop
+    -->
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        header {
+        background-color: skyblue;
+        width: 100%;
+        height: 90px;
+      }
+       /* mobile  */
+      @media screen and (max-width: 576px){
+        header{
+            background-color: bisque;
+        }
+
+         /* tablet */
+      }
+      @media screen and (min-width: 576px){
+        header{
+            background-color:blueviolet;
+        }
+      }
+
+       /* small laptop */
+
+
+      @media screen and (min-width: 768px){
+        header{
+            background-color: brown;
+        }
+      }
+
+      /* large laptop */
+
+      @media screen and (min-width: 992px){
+        header{
+            background-color: blue;
+        }
+      }
+      /* extra large */
+      @media screen and (min-width: 1200px) {
+        header {
+          background-color: rgb(64, 71, 77);
+        }
+      }
+    </style>
+</head>
+<body>
+    <header></header>
+</body>
+</html>
