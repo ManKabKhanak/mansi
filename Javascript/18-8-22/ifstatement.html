@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function check() {
+          // document form_name field_name value
+          var num1 = document.form1.num1.value;
+          var num2 = document.form1.num2.value;
+  
+         
+          if (num1 < num2) {
+            /*condition */ document.getElementById("p1").innerHTML =
+              "num1 is small";
+          } else if (num2 < num1) {
+            document.getElementById("p1").innerHTML = "num2 is small";
+          } else {
+            document.getElementById("p1").innerHTML = "value are same";
+          }
+        }
+      </script>
+      <form action="#" method="" name="form1" onsubmit="return check()">
+        Number 1: <input type="text" name="num1" /> <br /><br />
+  
+        Number 2: <input type="text" name="num2" /> <br /><br />
+  
+        <input type="submit" name="submit" value="Check" />
+      </form>
+      <p id="p1"></p>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box
+        {
+            width: 100%;
+            height: 600px;
+            background-color: skyblue;
+            clip-path: polygon(50% 0, 100% 100%, 0 100%);
+            clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+
+
+        }
+        .parent-box
+        {
+            width: 200px;
+            height: 200px;
+            margin: 200px auto;
+            border: 2px solid black;
+        }
+        .child-box {
+        width: 100%;
+        height: 100%;
+        background-color: skyblue;
+        /* clip-path: circle(r at x y); */
+        /*clip-path: circle(0px at 0% 0%);*/
+        /* clip-path: ellipse(x , y at xaxis yaxix); */
+        clip-path: ellipse(60px 30px at 50% 50%);
+        transition: 2s;
+        
+
+        }
+        .parent-box:hover .child-box {
+        clip-path: circle(100px at 0% 0%);
+        }
+    </style>
+<body>
+    <div class="box"></div>
+    <div class = "parent-box">
+        <div class="child-box"></div>
+    </div>
+</body>
+</html>

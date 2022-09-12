@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 100vh;
+            width: 100%;
+            background-color: skyblue;
+            
+
+        }
+
+    </style>
+</head>
+<body>
+    <script>
+        function Display(){
+            let n = document.form1.n.value;
+            for(let i=1; i<=10; i++){
+                let x = n*i;
+                document.writeln(n + "*" + i + "=" + x + "<br/>")
+            }
+        }
+    </script>
+    <div class="box">
+    <form action="#" name="form1" display="return Display()">
+     Enter any number: <input type="text" name="n"><br><br><br>
+     <button type="button" id="display" onclick="Display()">Display</button>
+    </div>
+    </form>
+</body>
+</html>

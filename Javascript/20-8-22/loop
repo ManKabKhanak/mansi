@@ -1,0 +1,23 @@
+loop - it means continue iteration count
+
+mainly 3 type of loop 
+- while
+  syntax : 
+    while(condition){
+       // statements
+    }
+
+- do..while
+  do{
+    //statements
+  }while(condition)
+
+- for
+  for(declaration; initialization; increment/decrement )
+  {
+    //statements
+  }
+
+for loop also used in array and object 
+ 32  
+20-08-2022/patternprogram.html
