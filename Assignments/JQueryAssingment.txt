@@ -1,0 +1,16 @@
+                Module (JQuery Basic, Effects & Advanced) – 5 
+
+1) What is jQuery?
+    Ans. JQuery is a Library of javascript that use to give Effect, Animation , Slider etc.
+
+
+2) How to Apply CSS Using JQuery, How to Add Class and Remove Class in Jquery , JQuery Animation?
+    Ans. Apply CSS using  css() function
+         Add & Remove class using addclass() & removeclass()
+         Animation apply using animate functions like hide(), show(), toggle, fadein(),         fadeout(),fadetoggle(),fadeto(), slideup(), slidedown(), slidetoggle(), animate().
+
+
+3) How to create slider with animation?
+Ans. Create slider using 
+The jQuery slideToggle() method toggles between the slideDown() and slideUp() methods. If the elements have been slid down, slideToggle() will slide them up. If the elements have been slid up, slideToggle() will slide them down. $(selector).slideToggle(speed,callback);
+     
